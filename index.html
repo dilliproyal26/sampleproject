@@ -1,69 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Page</title>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #0f172a;
-      color: white;
-      font-family: Arial;
-    }
+<title>My First Page</title>
 
-    .box {
-      text-align: center;
-      padding: 40px;
-      border-radius: 20px;
-      background: #1e293b;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
+<style>
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
 
-    p {
-      color: #cbd5e1;
-    }
-  </style>
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#021238;
+    color:white;
+}
+
+.container{
+    text-align:center;
+}
+
+.buttons{
+    margin-bottom:30px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    cursor:pointer;
+    border-radius:6px;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#4FACFE;
+    color:white;
+    transform:scale(1.1);
+}
+
+h1{
+    font-size:60px;
+}
+
+p{
+    font-size:25px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <a href="https://puligorladillipkumar.vercel.app/#home">
-      <button class="btn top">Dillip</button>
-    </a>
+<div class="buttons">
 
-    <a href="https://nandanurujyothiswar.vercel.app/">
-      <button class="btn left">Jyothi</button>
-    </a>
+<button>Dillip</button>
 
-    <a href="https://github.com">
-      <button class="btn right">Rohit</button>
-    </a>
+<button>Jyothi</button>
 
-    <a href="https://linkedin.com">
-      <button class="btn bottom">Manju</button>
-    </a>
+<button>Rohit</button>
 
-    <div class="card">
-      <h1>Hello World 🚀</h1>
-      <p>My first GitHub page</p>
-      <h3>Dillip Royal</h3>
-    </div>
+<button onclick="openPortfolio()">
+Manju
+</button>
 
-  </div>
+</div>
+
+<h1>Hello World 🚀</h1>
+
+<p>My first GitHub page</p>
+
+<h2>Dillip Royal</h2>
+
+</div>
+
+<script>
+
+function openPortfolio(){
+
+window.location.href =
+"file:///D:/Portfolio/index.html";
+
+}
+
+</script>
+
 </body>
-
 </html>
